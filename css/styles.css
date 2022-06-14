@@ -63,6 +63,8 @@ input[type="checkbox"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .brand-title {
@@ -78,8 +80,15 @@ input[type="checkbox"] {
 }
 
 /* ### Main and Sections ### */
-.container {
+.section-padding {
   padding: 40px 10px;
+}
+
+.container {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 /* --- Last News Section --- */
@@ -240,6 +249,7 @@ input[type="checkbox"] {
 
 .subscription-form {
   color: var(--secondary-color);
+  font-size: 16px;
 }
 
 .custom-text-input {
@@ -350,10 +360,18 @@ input[type="checkbox"] {
     padding-right: 20px;
   }
 
+  .main-nav {
+    max-width: 600px;
+  }
+
   /* ### Main and Sections ### */
-  .container {
+  .section-padding {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .container {
+    max-width: 600px;
   }
 
   /* --- Games Section --- */
@@ -393,7 +411,6 @@ input[type="checkbox"] {
 
   .main-nav {
     max-width: 820px;
-    margin: 0 auto;
   }
 
   .nav-menu {
@@ -414,10 +431,12 @@ input[type="checkbox"] {
   }
 
   /* ### Main and Sections ### */
-  .container {
+  .section-padding {
     padding: 50px 30px;
+  }
+
+  .container {
     max-width: 880px;
-    margin: 0 auto;
   }
 
   /* --- Last News Section --- */
@@ -461,6 +480,100 @@ input[type="checkbox"] {
   }
 
   .send-button {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 22px;
+  }
+
+  /* ### Header and Navbar ### */
+  .navbar-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .main-nav {
+    max-width: 990px;
+  }
+
+  .nav-menu {
+    width: 40%;
+  }
+
+  /* ### Main and Sections ### */
+  .section-padding {
+    padding: 40px 80px 55px;
+  }
+
+  .container {
+    max-width: 990px;
+  }
+
+  /* --- Last News Section --- */
+  .last-news-section-title,
+  .last-news-card {
+    margin-bottom: 40px;
+  }
+
+  /* --- Games Section --- */
+  .games-section-title {
+    margin-bottom: 50px;
+  }
+
+  .game-cards-container {
+    margin-bottom: 15px;
+  }
+
+  .game-card {
+    width: calc(26vw - 2px);
+    max-width: 300px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  .game-title {
+    font-size: 18px;
+  }
+
+  .game-studio {
+    font-size: 12px;
+  }
+
+  /* --- Subscription Section --- */
+  .subscription-section-title {
+    margin-bottom: 40px;
+  }
+
+  .form-card {
+    width: 85%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 50px 55px;
+  }
+
+  /* --- Footer Section --- */
+  .footer-section {
+    padding: 40px 80px;
+    height: 190px;
+    display: flex;
+  }
+
+  .footer-info-container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-media-container {
+    margin-bottom: 0;
+  }
+
+  .copyright {
     margin-bottom: 0;
   }
 }
